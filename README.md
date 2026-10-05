@@ -15,6 +15,9 @@
 ## 3. Integration & Nutzung
 Der Core ist nicht als Standalone-Programm konzipiert, sondern agiert als Blackbox-Engine. Er wird als Bibliothek kompiliert, liest eingehende JSON-Payloads ein, routet die Daten basierend auf ihrer Struktur an die dynamisch geladenen `.so`-Module und gibt das Resultat nach der Verarbeitung sicher zurück.
 
+
+# c2json-Core: Dynamic JSON & Node Framework
+
 > **⚠️ Architecture Note:** This repository contains *exclusively* the core engine of the `c2json` framework. It serves as the abstract C foundation for memory management, dynamic object mapping, and basic module loading logic. Specific application logic, network implementations, or specialized swarm nodes are strictly separated from this core and are dynamically loaded as external modules at runtime.
 
 ## 1. Abstract
